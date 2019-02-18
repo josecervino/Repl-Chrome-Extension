@@ -2,13 +2,8 @@
   "name": "Repl Chrome Extesnion",
   "version": "1.0",
   "options_page": "options.html",
-  "permissions": [
-    "tabs",
-    "storage"
-  ],
-  "web_accessible_resources" : [
-    "*.html"
-  ],
+  "permissions": ["tabs", "storage"],
+  "web_accessible_resources": ["*.html"],
   "background": {
     "page": "background.html",
     "persistent": false

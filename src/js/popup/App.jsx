@@ -1,27 +1,25 @@
 /* global chrome */
-import React from "react";
-import { hot } from "react-hot-loader";
+import React from 'react';
+import { hot } from 'react-hot-loader';
 
 class App extends React.Component {
   openTab() {
     const createTabOptions = {
-      url: "https://repl.it/languages/nodejs"
+      url: 'https://repl.it/languages/nodejs'
     };
 
     chrome.tabs.create(createTabOptions);
   }
 
-  render () {
+  render() {
     return (
       <React.Fragment>
-        <button 
-            onClick={this.openTab}
-            id="node-button"
-            className="repl-button"
-          >Node.js Repl.it</button>
+        <button onClick={this.openTab} id="node-button" className="repl-button">
+          Node.js Repl.it
+        </button>
       </React.Fragment>
     );
   }
 }
 
-export default hot(module)(App)
+export default hot(module)(App);
