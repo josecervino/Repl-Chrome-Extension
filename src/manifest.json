@@ -6,6 +6,9 @@
     "tabs",
     "storage"
   ],
+  "web_accessible_resources" : [
+    "*.html"
+  ],
   "background": {
     "page": "background.html",
     "persistent": false
