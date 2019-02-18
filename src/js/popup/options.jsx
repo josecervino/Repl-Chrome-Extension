@@ -1,16 +1,28 @@
 import React from "react";
-import icon from "../../img/icon-128.png"
 import { hot } from "react-hot-loader";
 
-class GreetingComponent extends React.Component {
+class Options extends React.Component {
+  openTab() {
+    alert('Pressed!');
+    const tabOptions = {
+      url: "https://repl.it/languages/nodejs"
+    };
+
+    chrome.tabs.create(tabOptions);
+  }
+
   render () {
     return (
-      <div>
-        <p>Hello, find me on src/js/popup/greeting_component.jsx</p>
-        <img src={icon} />
-      </div>
-    )
+      <React.Fragment>
+        <a href="https://repl.it/languages/nodejs">Node.js repl</a>
+        <button 
+            oncClick={this.openTab}
+            id="node-button"
+            className="repl-button"
+          >Node.js Repl.it</button>
+      </React.Fragment>
+    );
   }
-};
+}
 
-export default hot(module)(GreetingComponent)
+export default hot(module)(Options)
