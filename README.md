@@ -4,9 +4,9 @@ Simple Chrome Extension to open up Repl.it sandboxes in specific languages
 
 ## Technologies
 
-- [React]()
-- [Webpack]()
-- [Babel]()
+- [React](https://reactjs.org/)
+- [Webpack](https://webpack.js.org/)
+- [Babel](https://babeljs.io/)
 
 ## Sources
 
@@ -14,6 +14,7 @@ Thank you to these rockstars:
 
 - [Webpack & React Chrome Extension Boilerplate](https://github.com/samuelsimoes/chrome-extension-webpack-boilerplate)
 - [Article by Carter Robinson](https://blog.usejournal.com/making-an-interactive-chrome-extension-with-react-524483d7aa5d)
+- [Blog post by Tim Nolet](https://checklyhq.com/blog/2018/08/creating-a-chrome-extension-in-2018-the-good-the-bad-and-the-meh/)
 
 ### Ideas
 

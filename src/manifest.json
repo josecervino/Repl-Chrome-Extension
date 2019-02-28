@@ -1,16 +1,17 @@
 {
   "name": "Repl Chrome Extesnion",
-  "version": "1.0",
+  "version": "0.1.0",
   "options_page": "options.html",
   "permissions": ["tabs", "storage"],
   "web_accessible_resources": ["*.html"],
   "background": {
-    "page": "background.html",
+    "scripts": [
+      "background.js"
+    ],
     "persistent": false
   },
   "browser_action": {
-    "default_popup": "popup.html",
-    "default_icon": "icon-34.png"
+    "default_popup": "popup.html"
   },
   "icons": {
     "128": "icon-128.png"

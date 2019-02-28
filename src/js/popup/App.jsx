@@ -2,6 +2,10 @@
 import React from 'react';
 import { hot } from 'react-hot-loader';
 
+// TODO: Create simple components for buttons -> URLs are passed down via props
+// TODO: Styling
+// TODO: Component activation via options.js
+
 class App extends React.Component {
   openTab() {
     const createTabOptions = {
@@ -15,7 +19,7 @@ class App extends React.Component {
     return (
       <React.Fragment>
         <button onClick={this.openTab} id="node-button" className="repl-button">
-          Node.js Repl.it
+        Node.js
         </button>
       </React.Fragment>
     );
